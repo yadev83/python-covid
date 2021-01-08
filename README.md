@@ -24,7 +24,8 @@ If you wish to run this app on a computer using windows without having a python 
 ## Made with
 
 * [VS Code](https://code.visualstudio.com/) - A code editor that works well, made by Microsoft. Full of extensions made by the community, it supports a lot of languages, uses Git for merging and amending and a terminal is embedded in it.  
-* [Py2exe](http://www.py2exe.org/) - An extension that allows python to build apps into windows executables.  
+* [Py2exe](http://www.py2exe.org/) - An extension that allows python to build apps into windows executables. 
+* [Doxygen](https://www.doxygen.nl/index.html) - An excellent tool for comments based documentation. It generates html content and a PDF.  
 
 ## Features  
 
@@ -32,6 +33,10 @@ If you wish to run this app on a computer using windows without having a python 
 * A main function that gives a table full of data about today's status in every dept when typing ``covid``  
 * A table containing data for a specific dept when typing ``covid -dept <dpt_nb>``  
 * A table for a specific date when typing ``covid -date <dd-mm-yyyy>``  
+
+## Documentation  
+
+Documentation for this project is available as a [website](https://https://yadev83.github.io/python-covid/index.html) or as a [pdf file](docs/documentation.pdf). All of it has been generated using Doxygen.  
 
 ## Versions
 **Last Stable Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)  
