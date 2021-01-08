@@ -11,17 +11,6 @@ A class made to create some API calls on \char`\"{}https\+://coronavirusapi-\/fr
 \mbox{\Hypertarget{classrequest_1_1_request_abb6047b182aa9a2d5b13b5fcc20a47d0}\label{classrequest_1_1_request_abb6047b182aa9a2d5b13b5fcc20a47d0}} 
 def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
 \item 
-<<<<<<< HEAD
-\mbox{\Hypertarget{classrequest_1_1_request_a272e2ebf8f203f4a5b56508a4f0525ac}\label{classrequest_1_1_request_a272e2ebf8f203f4a5b56508a4f0525ac}} 
-def {\bfseries print\+Response} (self)
-\item 
-\mbox{\Hypertarget{classrequest_1_1_request_ae1238ed412ac78ec8266e4702c8353c9}\label{classrequest_1_1_request_ae1238ed412ac78ec8266e4702c8353c9}} 
-def {\bfseries get\+Global\+Data} (self)
-\item 
-\mbox{\Hypertarget{classrequest_1_1_request_aefc75884af55a4abc75666c07da35a2c}\label{classrequest_1_1_request_aefc75884af55a4abc75666c07da35a2c}} 
-def {\bfseries get\+All\+Data} (self)
-\end{DoxyCompactItemize}
-=======
 \mbox{\Hypertarget{classrequest_1_1_request_a09d2e05610a9ae41a642b1fdd6993466}\label{classrequest_1_1_request_a09d2e05610a9ae41a642b1fdd6993466}} 
 def \mbox{\hyperlink{classrequest_1_1_request_a09d2e05610a9ae41a642b1fdd6993466}{print\+Response}} (self)
 \begin{DoxyCompactList}\small\item\em This prints the self.\+response dictionnary as a table in the terminal. \end{DoxyCompactList}\item 
@@ -32,7 +21,6 @@ def \mbox{\hyperlink{classrequest_1_1_request_a32d41a332565600d8032efe07ac885fb}
 \begin{DoxyCompactList}\small\item\em Throw a request that gets the data about every department of France altogether. \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classrequest_1_1_request_a51712ee2242c2590ff23071d307e4e8f}{get\+Dpt\+Data}} (self, dpt, date=\char`\"{}0000-\/00-\/00\char`\"{})
 \begin{DoxyCompactList}\small\item\em Throw a request that gives data about a specific departement. \end{DoxyCompactList}\end{DoxyCompactItemize}
->>>>>>> backend/requests
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,14 +30,8 @@ def \mbox{\hyperlink{classrequest_1_1_request_a51712ee2242c2590ff23071d307e4e8f}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-<<<<<<< HEAD
-\mbox{\Hypertarget{classrequest_1_1_request_a3a0b081f11384e99d3653f80667047a5}\label{classrequest_1_1_request_a3a0b081f11384e99d3653f80667047a5}} 
-def {\bfseries \+\_\+\+\_\+push\+Info} (self, zone)
-\end{DoxyCompactItemize}
-=======
 def \mbox{\hyperlink{classrequest_1_1_request_a75c947fb31af331fbe6a21be262acf25}{\+\_\+\+\_\+push\+Info}} (self, zone)
 \begin{DoxyCompactList}\small\item\em This pushes an info into the response list. \end{DoxyCompactList}\end{DoxyCompactItemize}
->>>>>>> backend/requests
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,8 +43,6 @@ def \mbox{\hyperlink{classrequest_1_1_request_a75c947fb31af331fbe6a21be262acf25}
 \doxysubsection{Detailed Description}
 A class made to create some API calls on \char`\"{}https\+://coronavirusapi-\/france.\+now.\+sh/\char`\"{}. 
 
-<<<<<<< HEAD
-=======
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classrequest_1_1_request_a75c947fb31af331fbe6a21be262acf25}\label{classrequest_1_1_request_a75c947fb31af331fbe6a21be262acf25}} 
 \index{request.Request@{request.Request}!\_\_pushInfo@{\_\_pushInfo}}
@@ -79,8 +59,7 @@ This pushes an info into the response list.
 {\em zone} & This parameter is the json-\/formatted dictionnary for a specific department in france (or global)\\
 \hline
 \end{DoxyParams}
-This creates an element in the response dictionnary properly formatted Here is the caller graph for this function\+:
-\nopagebreak
+This creates an element in the response dictionnary properly formatted Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -102,16 +81,14 @@ Throw a request that gets the data about every department of France altogether.
 {\em date} & The date from which we want the data. By default, this is today\textquotesingle{}s date \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classrequest_1_1_request_a32d41a332565600d8032efe07ac885fb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -135,8 +112,7 @@ Throw a request that gives data about a specific departement.
 {\em date} & The date from which we want the data. By default, this is today\textquotesingle{}s date\\
 \hline
 \end{DoxyParams}
-There is in the API a specific \char`\"{}url/\+Live\+Data\+By\+Departement?\+Departement=\{dpt\}\char`\"{} call available. However, to be able to do a request with a specific date, it has to be a \char`\"{}\+All\+Data\+By\+Date\char`\"{} call. So this function makes a \mbox{\hyperlink{classrequest_1_1_request_a32d41a332565600d8032efe07ac885fb}{get\+All\+Data()}} call with a specific date and then filters the full request with only the wanted departement. Here is the call graph for this function\+:
-\nopagebreak
+There is in the API a specific \char`\"{}url/\+Live\+Data\+By\+Departement?\+Departement=\{dpt\}\char`\"{} call available. However, to be able to do a request with a specific date, it has to be a \char`\"{}\+All\+Data\+By\+Date\char`\"{} call. So this function makes a \mbox{\hyperlink{classrequest_1_1_request_a32d41a332565600d8032efe07ac885fb}{get\+All\+Data()}} call with a specific date and then filters the full request with only the wanted departement. Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -145,7 +121,6 @@ There is in the API a specific \char`\"{}url/\+Live\+Data\+By\+Departement?\+Dep
 \end{figure}
 
 
->>>>>>> backend/requests
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
 src/\mbox{\hyperlink{request_8py}{request.\+py}}\end{DoxyCompactItemize}
