@@ -34,8 +34,8 @@ If you wish to run this app on a computer using windows without having a python 
 * A table for a specific date when typing ``covid -date <dd-mm-yyyy>``  
 
 ## Versions
-**Last Stable Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)
-**Last Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)
+**Last Stable Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)  
+**Last Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)  
 
 Versions list : [Click here to see](https://github.com/yadev83/python-covid/tags)
 
