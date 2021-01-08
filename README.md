@@ -10,6 +10,8 @@ This project is a CLI application that gives information about the covid-pandemi
 To work with this project, you'll need...  
 
 - Python 3.7 or above installed  
+- The "requests" module installed for Python : ``pip install requests``  
+- The "tabulate" module installed for Python : ``pip install tabulate``  
 
 ## To start the app
 

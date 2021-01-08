@@ -1,0 +1,5 @@
+<map id="request.Request.getDptData" name="request.Request.getDptData">
+<area shape="rect" id="node1" title="Throw a request that gives data about a specific departement." alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node2" href="$classrequest_1_1_request.html#a32d41a332565600d8032efe07ac885fb" title="Throw a request that gets the data about every department of France altogether." alt="" coords="240,5,421,32"/>
+<area shape="rect" id="node3" href="$classrequest_1_1_request.html#a75c947fb31af331fbe6a21be262acf25" title="This pushes an info into the response list." alt="" coords="469,5,652,32"/>
+</map>
