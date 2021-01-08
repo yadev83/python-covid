@@ -12,4 +12,5 @@ import request as req
 
 api = req.Request()
 
-print(api.getGlobalData())
+api.getAllData()
+api.printResponse()
