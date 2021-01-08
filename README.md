@@ -19,7 +19,7 @@ Just clone this repo and run
 ``py src/app.py``  
 and check that covid data !  
 
-If you wish to run this app on a computer using windows without having a python installation, you can download a release package that contains an executable made out of the source code using py2exe.  
+If you wish to run this app on a computer using windows without having a python installation, you can download a release package that contains an executable made out of the source code using py2exe. (WIP)  
 
 ## Made with
 
@@ -36,7 +36,7 @@ If you wish to run this app on a computer using windows without having a python 
 
 ## Documentation  
 
-Documentation for this project is available as a [website](https://yadev83.github.io/python-covid/index.html) or as a [pdf file](docs/documentation.pdf). All of it has been generated using Doxygen.  
+Documentation for this project is available as a [website](https://yadev83.github.io/python-covid/index.html) or as a [pdf file](docs/reference_manual.pdf). All of it has been generated using Doxygen.  
 
 ## Versions
 **Last Stable Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)  
