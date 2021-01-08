@@ -12,5 +12,5 @@ import request as req
 
 api = req.Request()
 
-api.getDptData("Ain")
+api.getAllData()
 api.printResponse()
