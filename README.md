@@ -36,7 +36,7 @@ If you wish to run this app on a computer using windows without having a python 
 
 ## Documentation  
 
-Documentation for this project is available as a [website](https://https://yadev83.github.io/python-covid/index.html) or as a [pdf file](docs/documentation.pdf). All of it has been generated using Doxygen.  
+Documentation for this project is available as a [website](https://yadev83.github.io/python-covid/index.html) or as a [pdf file](docs/documentation.pdf). All of it has been generated using Doxygen.  
 
 ## Versions
 **Last Stable Version :** [1.0.2-d](https://github.com/yadev83/python-covid/releases/tag/v1.0.2-d)  
