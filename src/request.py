@@ -5,8 +5,8 @@
 # @version 0.2
 # @date 2021-01-08
 #
-# Version 0.1 - File creation  
-# Version 0.2 - Adds getDptData and date parameters  
+# Version 0.1 - File creation\n
+# Version 0.2 - Adds getDptData and date parameter\n
 #
 # @copyright Copyright (c) 2021
 ##

@@ -9,8 +9,9 @@
 ##
 
 import request as req
+import cli
 
 api = req.Request()
+interface = cli.CLI("covid")
 
-api.getAllData()
-api.printResponse()
+interface.run()
