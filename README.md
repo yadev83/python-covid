@@ -10,6 +10,9 @@ This project is a CLI application that gives information about the covid-pandemi
 To work with this project, you'll need...  
 
 - Python 3.7 or above installed  
+If you have Python installed and PiP ready, you can easily run the following command to install all the project dependencies at once :  
+``pip install -r requirements.txt``  
+On the other hand, you can install every requirement one by one :  
 - The "requests" module installed for Python : ``pip install requests``  
 - The "tabulate" module installed for Python : ``pip install tabulate``  
 
