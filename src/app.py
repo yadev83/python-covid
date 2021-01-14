@@ -8,10 +8,8 @@
 # @copyright Copyright (c) 2021
 ##
 
-import request as req
 import cli
 
-api = req.Request()
 interface = cli.CLI("covid")
 
 interface.run()
