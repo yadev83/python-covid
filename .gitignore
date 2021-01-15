@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignoring xls files produced by covid -e
+*.xls
+
 # C extensions
 *.so
 
