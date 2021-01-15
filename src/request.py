@@ -117,7 +117,7 @@ class Request:
     def getDptData(self, dpt, date = "0000-00-00"):
         self.getAllData(date)
 
-        if len(self.response) is not 0:
+        if len(self.response):
             if type(dpt) is not str:
                 dpt = str(dpt)
 
