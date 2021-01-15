@@ -2,11 +2,12 @@
 # @file request.py
 # @author Yanis ATTIA (@yadev83)
 # @brief The request class to be used for the Covid19-fr api
-# @version 0.2
+# @version 0.3
 # @date 2021-01-08
 #
-# Version 0.1 - File creation\n
+# Version 0.3 - Removes camel case notation\n
 # Version 0.2 - Adds getDptData and date parameter\n
+# Version 0.1 - File creation\n
 #
 # @copyright Copyright (c) 2021
 ##
@@ -35,13 +36,13 @@ class Request:
         })
 
     ##
-    # @fn __pushInfo
+    # @fn __push_info
     # @brief This pushes an info into the response list
     # @param zone This parameter is the json-formatted dictionnary for a specific department in france (or global)
     # 
     # This creates an element in the response dictionnary properly formatted
     ##
-    def __pushInfo(self, zone):
+    def __push_info(self, zone):
         self.response.append({
             "Code": zone["code"],
             "Nom": zone["nom"],
@@ -55,10 +56,10 @@ class Request:
         })
 
     ##
-    # @fn printResponse
+    # @fn print_response
     # @brief This prints the self.response dictionnary as a table in the terminal
     ##
-    def printResponse(self):
+    def print_response(self):
         if len(self.response) is 0:
             print("ERROR::Can not print an empty response...")
         else:
@@ -69,20 +70,20 @@ class Request:
             print(tabulate(values, headers=keys))
     
     ##
-    # @fn getGlobalData
+    # @fn get_global_data
     # @brief Throw a request that gets the data about the whole France
     ##
-    def getGlobalData(self):
+    def get_global_data(self):
         httpResponse = requests.get(self.__apiAddr + "FranceLiveGlobalData")
         self.response = []
-        self.__pushInfo(httpResponse.json()["FranceGlobalLiveData"][0])
+        self.__push_info(httpResponse.json()["FranceGlobalLiveData"][0])
     
     ## 
-    # @fn getAllData
+    # @fn get_all_data
     # @brief Throw a request that gets the data about every department of France altogether
     # @param date The date from which we want the data. By default, this is today's date
     ##
-    def getAllData(self, date = "0000-00-00"):
+    def get_all_data(self, date = "0000-00-00"):
         regex = re.compile('\d{4}-\d{2}-\d{2}')
         key = "allLiveFranceData"
         if date != "0000-00-00":
@@ -101,21 +102,21 @@ class Request:
             print("ERROR::Request gave an empty result. Please make sure that every parameter is correct (no overflowing dates and correct internet connection")
         else:
             for dept in httpResponse.json()[key]:
-                self.__pushInfo(dept)
+                self.__push_info(dept)
     
     ##
-    # @fn getDptData
+    # @fn get_dpt_data
     # @brief Throw a request that gives data about a specific departement
     # @param dpt The department number to get
     # @param date The date from which we want the data. By default, this is today's date
     #
     # There is in the API a specific "url/LiveDataByDepartement?Departement={dpt}" call available.
     # However, to be able to do a request with a specific date, it has to be a "AllDataByDate" call.
-    # So this function makes a getAllData() call with a specific date and then
+    # So this function makes a get_all_data() call with a specific date and then
     # filters the full request with only the wanted departement.
     ##
-    def getDptData(self, dpt, date = "0000-00-00"):
-        self.getAllData(date)
+    def get_dpt_data(self, dpt, date = "0000-00-00"):
+        self.get_all_data(date)
 
         if len(self.response):
             if type(dpt) is not str:

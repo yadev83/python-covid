@@ -82,12 +82,12 @@ class CLI:
                 print(cmd.get_name() + " : --" + cmd.get_name() + " or -" + cmd.get_alias() + " | " + cmd.get_description())
         
         if command.get_name() == "date":
-            self.__api.getAllData(param)
-            self.__api.printResponse()
+            self.__api.get_all_data(param)
+            self.__api.print_response()
         
         if command.get_name() == "department":
-            self.__api.getDptData(param)
-            self.__api.printResponse()
+            self.__api.get_dpt_data(param)
+            self.__api.print_response()
 
     ##
     # @fn exec
@@ -110,8 +110,8 @@ class CLI:
                         self.__handle_cmd(instructions[i], instructions[i+1])
                         i = i+2
             else:
-                self.__api.getAllData()
-                self.__api.printResponse()
+                self.__api.get_all_data()
+                self.__api.print_response()
         elif keyword == "quit" or keyword == "q":
             self.__handle_cmd("--quit")
         else:
