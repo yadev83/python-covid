@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getalldata_2',['getAllData',['../classrequest_1_1_request.html#a32d41a332565600d8032efe07ac885fb',1,'request::Request']]],
-  ['getdptdata_3',['getDptData',['../classrequest_1_1_request.html#a51712ee2242c2590ff23071d307e4e8f',1,'request::Request']]],
-  ['getglobaldata_4',['getGlobalData',['../classrequest_1_1_request.html#aacf930abd0a2a2aa4274786d1b6f4382',1,'request::Request']]]
+  ['cli_3',['CLI',['../classcli_1_1_c_l_i.html',1,'cli']]],
+  ['cli_2epy_4',['cli.py',['../cli_8py.html',1,'']]],
+  ['command_5',['Command',['../classcli_1_1_command.html',1,'cli']]]
 ];

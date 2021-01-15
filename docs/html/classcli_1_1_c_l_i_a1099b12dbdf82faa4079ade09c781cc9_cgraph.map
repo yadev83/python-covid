@@ -1,0 +1,6 @@
+<map id="cli.CLI.run" name="cli.CLI.run">
+<area shape="rect" id="node1" title="Tha main loop for the CLI to run." alt="" coords="5,5,85,32"/>
+<area shape="rect" id="node2" href="$classcli_1_1_c_l_i.html#a722d018b3e5349ed1d3d45e0da00e02b" title="Take an instruction as a parameter (and the following parameter)" alt="" coords="272,5,419,32"/>
+<area shape="rect" id="node4" href="$classcli_1_1_c_l_i.html#a86705a7b273c6cc4019302e367ef123a" title="Parses and executes the whole line." alt="" coords="133,31,224,57"/>
+<area shape="rect" id="node3" href="$classcli_1_1_c_l_i.html#a9a934a34d01a09cb047bdeab1e25820f" title=" " alt="" coords="467,5,609,32"/>
+</map>

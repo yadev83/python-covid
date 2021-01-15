@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['request_9',['Request',['../classrequest_1_1_request.html',1,'request']]]
+  ['cli_18',['CLI',['../classcli_1_1_c_l_i.html',1,'cli']]],
+  ['command_19',['Command',['../classcli_1_1_command.html',1,'cli']]]
 ];

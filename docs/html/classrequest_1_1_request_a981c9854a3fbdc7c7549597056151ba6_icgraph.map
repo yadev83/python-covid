@@ -1,0 +1,6 @@
+<map id="request.Request.__push_info" name="request.Request.__push_info">
+<area shape="rect" id="node1" title="This pushes an info into the response list." alt="" coords="379,46,569,73"/>
+<area shape="rect" id="node2" href="$classrequest_1_1_request.html#aa33735927b08181daa622c07d7cc2138" title="Throw a request that gets the data about every department of France altogether." alt="" coords="192,5,331,47"/>
+<area shape="rect" id="node4" href="$classrequest_1_1_request.html#a6feef2e742134f3f2d9b2d3d084a2dcf" title="Throw a request that gets the data about the whole France." alt="" coords="192,71,331,112"/>
+<area shape="rect" id="node3" href="$classrequest_1_1_request.html#aff5af0770af2cbe65fd9787f1848782f" title="Throw a request that gives data about a specific departement." alt="" coords="5,5,144,47"/>
+</map>

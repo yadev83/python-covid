@@ -1,0 +1,4 @@
+<map id="request.Request.get_all_data" name="request.Request.get_all_data">
+<area shape="rect" id="node1" title="Throw a request that gets the data about every department of France altogether." alt="" coords="192,5,331,47"/>
+<area shape="rect" id="node2" href="$classrequest_1_1_request.html#aff5af0770af2cbe65fd9787f1848782f" title="Throw a request that gives data about a specific departement." alt="" coords="5,5,144,47"/>
+</map>
