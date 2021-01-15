@@ -14,6 +14,8 @@ def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
 \mbox{\Hypertarget{classrequest_1_1_request_ae7463d9d401c50dd430919621554feb6}\label{classrequest_1_1_request_ae7463d9d401c50dd430919621554feb6}} 
 def \mbox{\hyperlink{classrequest_1_1_request_ae7463d9d401c50dd430919621554feb6}{print\+\_\+response}} (self)
 \begin{DoxyCompactList}\small\item\em This prints the self.\+response dictionnary as a table in the terminal. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classrequest_1_1_request_a08ada8093537879d98904ed2d6a848fd}{export\+\_\+response\+\_\+to\+\_\+excel}} (self, fname=\char`\"{}output.\+xls\char`\"{})
+\begin{DoxyCompactList}\small\item\em This exports the contents of the result response to an xls file. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classrequest_1_1_request_a6feef2e742134f3f2d9b2d3d084a2dcf}\label{classrequest_1_1_request_a6feef2e742134f3f2d9b2d3d084a2dcf}} 
 def \mbox{\hyperlink{classrequest_1_1_request_a6feef2e742134f3f2d9b2d3d084a2dcf}{get\+\_\+global\+\_\+data}} (self)
 \begin{DoxyCompactList}\small\item\em Throw a request that gets the data about the whole France. \end{DoxyCompactList}\item 
@@ -59,14 +61,28 @@ This pushes an info into the response list.
 {\em zone} & This parameter is the json-\/formatted dictionnary for a specific department in france (or global)\\
 \hline
 \end{DoxyParams}
-This creates an element in the response dictionnary properly formatted Here is the caller graph for this function\+:
-\nopagebreak
+This creates an element in the response dictionnary properly formatted Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classrequest_1_1_request_a981c9854a3fbdc7c7549597056151ba6_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{classrequest_1_1_request_a08ada8093537879d98904ed2d6a848fd}\label{classrequest_1_1_request_a08ada8093537879d98904ed2d6a848fd}} 
+\index{request.Request@{request.Request}!export\_response\_to\_excel@{export\_response\_to\_excel}}
+\index{export\_response\_to\_excel@{export\_response\_to\_excel}!request.Request@{request.Request}}
+\doxysubsubsection{\texorpdfstring{export\_response\_to\_excel()}{export\_response\_to\_excel()}}
+{\footnotesize\ttfamily request.\+Request.\+export\+\_\+response\+\_\+to\+\_\+excel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fname = {\ttfamily \char`\"{}output.xls\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+This exports the contents of the result response to an xls file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & the name of the file to write to \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classrequest_1_1_request_aa33735927b08181daa622c07d7cc2138}\label{classrequest_1_1_request_aa33735927b08181daa622c07d7cc2138}} 
 \index{request.Request@{request.Request}!get\_all\_data@{get\_all\_data}}
 \index{get\_all\_data@{get\_all\_data}!request.Request@{request.Request}}
@@ -82,16 +98,14 @@ Throw a request that gets the data about every department of France altogether.
 {\em date} & The date from which we want the data. By default, this is today\textquotesingle{}s date \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classrequest_1_1_request_aa33735927b08181daa622c07d7cc2138_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -115,8 +129,7 @@ Throw a request that gives data about a specific departement.
 {\em date} & The date from which we want the data. By default, this is today\textquotesingle{}s date\\
 \hline
 \end{DoxyParams}
-There is in the API a specific \char`\"{}url/\+Live\+Data\+By\+Departement?\+Departement=\{dpt\}\char`\"{} call available. However, to be able to do a request with a specific date, it has to be a \char`\"{}\+All\+Data\+By\+Date\char`\"{} call. So this function makes a \mbox{\hyperlink{classrequest_1_1_request_aa33735927b08181daa622c07d7cc2138}{get\+\_\+all\+\_\+data()}} call with a specific date and then filters the full request with only the wanted departement. Here is the call graph for this function\+:
-\nopagebreak
+There is in the API a specific \char`\"{}url/\+Live\+Data\+By\+Departement?\+Departement=\{dpt\}\char`\"{} call available. However, to be able to do a request with a specific date, it has to be a \char`\"{}\+All\+Data\+By\+Date\char`\"{} call. So this function makes a \mbox{\hyperlink{classrequest_1_1_request_aa33735927b08181daa622c07d7cc2138}{get\+\_\+all\+\_\+data()}} call with a specific date and then filters the full request with only the wanted departement. Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

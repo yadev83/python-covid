@@ -17,11 +17,13 @@
 
   \item {exec}
     \subitem {cli.CLI}, \hyperpage{8}
+  \item {export\_response\_to\_excel}
+    \subitem {request.Request}, \hyperpage{11}
 
   \indexspace
 
   \item {get\_all\_data}
-    \subitem {request.Request}, \hyperpage{11}
+    \subitem {request.Request}, \hyperpage{12}
   \item {get\_dpt\_data}
     \subitem {request.Request}, \hyperpage{12}
 
@@ -29,7 +31,8 @@
 
   \item {request.Request}, \hyperpage{10}
     \subitem {\_\_push\_info}, \hyperpage{11}
-    \subitem {get\_all\_data}, \hyperpage{11}
+    \subitem {export\_response\_to\_excel}, \hyperpage{11}
+    \subitem {get\_all\_data}, \hyperpage{12}
     \subitem {get\_dpt\_data}, \hyperpage{12}
   \item {run}
     \subitem {cli.CLI}, \hyperpage{9}

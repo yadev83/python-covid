@@ -9,8 +9,10 @@
 \indexentry{request.Request@{request.Request}|hyperpage}{10}
 \indexentry{request.Request@{request.Request}!\_\_push\_info@{\_\_push\_info}|hyperpage}{11}
 \indexentry{\_\_push\_info@{\_\_push\_info}!request.Request@{request.Request}|hyperpage}{11}
-\indexentry{request.Request@{request.Request}!get\_all\_data@{get\_all\_data}|hyperpage}{11}
-\indexentry{get\_all\_data@{get\_all\_data}!request.Request@{request.Request}|hyperpage}{11}
+\indexentry{request.Request@{request.Request}!export\_response\_to\_excel@{export\_response\_to\_excel}|hyperpage}{11}
+\indexentry{export\_response\_to\_excel@{export\_response\_to\_excel}!request.Request@{request.Request}|hyperpage}{11}
+\indexentry{request.Request@{request.Request}!get\_all\_data@{get\_all\_data}|hyperpage}{12}
+\indexentry{get\_all\_data@{get\_all\_data}!request.Request@{request.Request}|hyperpage}{12}
 \indexentry{request.Request@{request.Request}!get\_dpt\_data@{get\_dpt\_data}|hyperpage}{12}
 \indexentry{get\_dpt\_data@{get\_dpt\_data}!request.Request@{request.Request}|hyperpage}{12}
 \indexentry{src/app.py@{src/app.py}|hyperpage}{15}
