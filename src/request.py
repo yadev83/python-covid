@@ -71,8 +71,15 @@ class Request:
                 values.append(resp.values())
             print(tabulate(values, headers=keys))
     
+    ##
+    # @fn export_response_to_excel
+    # @brief This exports the contents of the result response to an xls file
+    # 
+    # @param fname the name of the file to write to
+    ##
     def export_response_to_excel(self, fname = "output.xls"):
         if fname == "":
+            print("WARNING::File name for excel export unknown or incorrect. Using \"output.xls\" instead")
             fname = "output.xls"
 
         if not len(self.response):
