@@ -2,25 +2,36 @@
 \contentsline {chapter}{\numberline {1}Python-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Covid}{1}{chapter.1}%
 \contentsline {subsection}{\numberline {1.0.1}Pre-\/requisite}{1}{subsection.1.0.1}%
 \contentsline {section}{\numberline {1.1}To start the app}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Made with}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Made with}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Features}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Versions}{2}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Authors}{2}{section.1.5}%
-\contentsline {section}{\numberline {1.6}License}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.4}Documentation}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Versions}{2}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Authors}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.7}License}{2}{section.1.7}%
 \contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
 \contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}request.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Request Class Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.1}cli.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CLI Class Reference}{7}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{8}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.1}\_\_pushInfo()}{8}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {4.1.2.2}getAllData()}{8}{subsubsection.4.1.2.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.3}getDptData()}{9}{subsubsection.4.1.2.3}%
-\contentsline {chapter}{\numberline {5}File Documentation}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}src/app.py File Reference}{11}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{11}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}src/request.py File Reference}{11}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{12}{subsection.5.2.1}%
-\contentsline {chapter}{Index}{13}{section*.11}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}\_\_handle\_cmd()}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}exec()}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}run()}{9}{subsubsection.4.1.2.3}%
+\contentsline {section}{\numberline {4.2}cli.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Command Class Reference}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{10}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}request.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Request Class Reference}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{11}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{11}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}\_\_push\_info()}{11}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}get\_all\_data()}{12}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}get\_dpt\_data()}{12}{subsubsection.4.3.2.3}%
+\contentsline {chapter}{\numberline {5}File Documentation}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}src/app.py File Reference}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{15}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}src/cli.py File Reference}{15}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{16}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}src/request.py File Reference}{16}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{17}{subsection.5.3.1}%
+\contentsline {chapter}{Index}{19}{section*.23}%

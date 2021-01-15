@@ -1,25 +1,43 @@
 \begin{theindex}
 
-  \item {\_\_pushInfo}
-    \subitem {request.Request}, \hyperpage{8}
+  \item {\_\_handle\_cmd}
+    \subitem {cli.CLI}, \hyperpage{8}
+  \item {\_\_push\_info}
+    \subitem {request.Request}, \hyperpage{11}
 
   \indexspace
 
-  \item {getAllData}
-    \subitem {request.Request}, \hyperpage{8}
-  \item {getDptData}
-    \subitem {request.Request}, \hyperpage{9}
+  \item {cli.CLI}, \hyperpage{7}
+    \subitem {\_\_handle\_cmd}, \hyperpage{8}
+    \subitem {exec}, \hyperpage{8}
+    \subitem {run}, \hyperpage{9}
+  \item {cli.Command}, \hyperpage{10}
 
   \indexspace
 
-  \item {request.Request}, \hyperpage{7}
-    \subitem {\_\_pushInfo}, \hyperpage{8}
-    \subitem {getAllData}, \hyperpage{8}
-    \subitem {getDptData}, \hyperpage{9}
+  \item {exec}
+    \subitem {cli.CLI}, \hyperpage{8}
 
   \indexspace
 
-  \item {src/app.py}, \hyperpage{11}
-  \item {src/request.py}, \hyperpage{11}
+  \item {get\_all\_data}
+    \subitem {request.Request}, \hyperpage{11}
+  \item {get\_dpt\_data}
+    \subitem {request.Request}, \hyperpage{12}
+
+  \indexspace
+
+  \item {request.Request}, \hyperpage{10}
+    \subitem {\_\_push\_info}, \hyperpage{11}
+    \subitem {get\_all\_data}, \hyperpage{11}
+    \subitem {get\_dpt\_data}, \hyperpage{12}
+  \item {run}
+    \subitem {cli.CLI}, \hyperpage{9}
+
+  \indexspace
+
+  \item {src/app.py}, \hyperpage{15}
+  \item {src/cli.py}, \hyperpage{15}
+  \item {src/request.py}, \hyperpage{16}
 
 \end{theindex}

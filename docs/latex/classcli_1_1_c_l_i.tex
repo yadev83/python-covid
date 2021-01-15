@@ -1,0 +1,136 @@
+\hypertarget{classcli_1_1_c_l_i}{}\doxysection{cli.\+CLI Class Reference}
+\label{classcli_1_1_c_l_i}\index{cli.CLI@{cli.CLI}}
+
+
+A class made to create some \mbox{\hyperlink{classcli_1_1_c_l_i}{CLI}} and commands interpretation.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a756c61603d3acf66fd93b402edefc471}\label{classcli_1_1_c_l_i_a756c61603d3acf66fd93b402edefc471}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, keyword)
+\item 
+def \mbox{\hyperlink{classcli_1_1_c_l_i_a86705a7b273c6cc4019302e367ef123a}{exec}} (self, command)
+\begin{DoxyCompactList}\small\item\em Parses and executes the whole line. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classcli_1_1_c_l_i_a1099b12dbdf82faa4079ade09c781cc9}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Tha main loop for the \mbox{\hyperlink{classcli_1_1_c_l_i}{CLI}} to run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a792fc2beaf9b38402a5c1bb0a5ec074a}\label{classcli_1_1_c_l_i_a792fc2beaf9b38402a5c1bb0a5ec074a}} 
+{\bfseries should\+Quit}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classcli_1_1_c_l_i_a722d018b3e5349ed1d3d45e0da00e02b}{\+\_\+\+\_\+handle\+\_\+cmd}} (self, instruction, param=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Take an instruction as a parameter (and the following parameter) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a9a934a34d01a09cb047bdeab1e25820f}\label{classcli_1_1_c_l_i_a9a934a34d01a09cb047bdeab1e25820f}} 
+def {\bfseries \+\_\+\+\_\+\+\_\+exec\+\_\+cmd} (self, command, param=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a971aac73954cb606081a82983ef329c8}\label{classcli_1_1_c_l_i_a971aac73954cb606081a82983ef329c8}} 
+{\bfseries \+\_\+\+\_\+keyword}
+\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_ac6186ba7b8d9488b77de60a678a7eb42}\label{classcli_1_1_c_l_i_ac6186ba7b8d9488b77de60a678a7eb42}} 
+{\bfseries \+\_\+\+\_\+api}
+\item 
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a3c34f2193ed7fd949dd596f262c48ed8}\label{classcli_1_1_c_l_i_a3c34f2193ed7fd949dd596f262c48ed8}} 
+{\bfseries \+\_\+\+\_\+commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class made to create some \mbox{\hyperlink{classcli_1_1_c_l_i}{CLI}} and commands interpretation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a722d018b3e5349ed1d3d45e0da00e02b}\label{classcli_1_1_c_l_i_a722d018b3e5349ed1d3d45e0da00e02b}} 
+\index{cli.CLI@{cli.CLI}!\_\_handle\_cmd@{\_\_handle\_cmd}}
+\index{\_\_handle\_cmd@{\_\_handle\_cmd}!cli.CLI@{cli.CLI}}
+\doxysubsubsection{\texorpdfstring{\_\_handle\_cmd()}{\_\_handle\_cmd()}}
+{\footnotesize\ttfamily cli.\+CLI.\+\_\+\+\_\+handle\+\_\+cmd (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instruction,  }\item[{}]{param = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Take an instruction as a parameter (and the following parameter) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & the option to run (either --option or -\/alias) \\
+\hline
+{\em param} & the parameter to give to that specific option \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classcli_1_1_c_l_i_a722d018b3e5349ed1d3d45e0da00e02b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcli_1_1_c_l_i_a722d018b3e5349ed1d3d45e0da00e02b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a86705a7b273c6cc4019302e367ef123a}\label{classcli_1_1_c_l_i_a86705a7b273c6cc4019302e367ef123a}} 
+\index{cli.CLI@{cli.CLI}!exec@{exec}}
+\index{exec@{exec}!cli.CLI@{cli.CLI}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily cli.\+CLI.\+exec (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{command }\end{DoxyParamCaption})}
+
+
+
+Parses and executes the whole line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & A string containing a full line of command \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcli_1_1_c_l_i_a86705a7b273c6cc4019302e367ef123a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classcli_1_1_c_l_i_a86705a7b273c6cc4019302e367ef123a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcli_1_1_c_l_i_a1099b12dbdf82faa4079ade09c781cc9}\label{classcli_1_1_c_l_i_a1099b12dbdf82faa4079ade09c781cc9}} 
+\index{cli.CLI@{cli.CLI}!run@{run}}
+\index{run@{run}!cli.CLI@{cli.CLI}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily cli.\+CLI.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Tha main loop for the \mbox{\hyperlink{classcli_1_1_c_l_i}{CLI}} to run. 
+
+Waits for an input and treat it Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcli_1_1_c_l_i_a1099b12dbdf82faa4079ade09c781cc9_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{cli_8py}{cli.\+py}}\end{DoxyCompactItemize}
