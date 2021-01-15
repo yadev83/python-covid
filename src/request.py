@@ -14,6 +14,8 @@
 import requests
 from tabulate import tabulate
 import re
+import xlwt
+import os
 
 ##
 # @class Request
@@ -60,7 +62,7 @@ class Request:
     # @brief This prints the self.response dictionnary as a table in the terminal
     ##
     def print_response(self):
-        if len(self.response) is 0:
+        if not len(self.response):
             print("ERROR::Can not print an empty response...")
         else:
             keys = self.response[0].keys()
@@ -68,6 +70,40 @@ class Request:
             for resp in self.response:
                 values.append(resp.values())
             print(tabulate(values, headers=keys))
+    
+    def export_response_to_excel(self, fname = "output.xls"):
+        if fname == "":
+            fname = "output.xls"
+
+        if not len(self.response):
+            print("ERROR::Can not output an empty response...")
+        else:
+            keys = self.response[0].keys()
+            values = []
+            for resp in self.response:
+                values.append(resp.values())
+
+            book = xlwt.Workbook()
+            sheet = book.add_sheet("Covid")
+
+            row = sheet.row(0)
+            for index, col in enumerate(keys):
+                row.write(index, col)
+            
+            row_nb = 1
+            for val in values:
+                # We need to output as a list to print separately each value
+                val_list = list(val)
+                row = sheet.row(row_nb)
+                for index, key in enumerate(keys):
+                    row.write(index, val_list[index])
+                row_nb += 1
+
+            if os.path.isfile(fname):
+                print ("The output file already exists. Rename it, move it or remove it before we can write to another of the same name")
+            else:
+                book.save(fname)
+
     
     ##
     # @fn get_global_data

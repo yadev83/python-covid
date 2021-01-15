@@ -36,6 +36,7 @@ class CLI:
         self.__commands.append(Command("quit", "q", "Quits the CLI"))
         self.__commands.append(Command("date", "d", "Takes a date as \"yyyy-mm-dd\" in parameter"))
         self.__commands.append(Command("department", "dpt", "Takes a department as a parameter (name or number)"))
+        self.__commands.append(Command("excel", "e", "Outputs the result to an excel file (file name can be given as parameter)"))
 
         self.shouldQuit = False
 
@@ -82,12 +83,17 @@ class CLI:
                 print(cmd.get_name() + " : --" + cmd.get_name() + " or -" + cmd.get_alias() + " | " + cmd.get_description())
         
         if command.get_name() == "date":
-            self.__api.get_all_data(param)
+            self.__api.get_all_data()
             self.__api.print_response()
         
         if command.get_name() == "department":
             self.__api.get_dpt_data(param)
             self.__api.print_response()
+        
+        if command.get_name() == "excel":
+            self.__api.get_all_data()
+            self.__api.print_response()
+            self.__api.export_response_to_excel(param)
 
     ##
     # @fn exec
