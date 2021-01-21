@@ -37,6 +37,7 @@ class CLI:
         self.__commands.append(Command("date", "d", "Takes a date as \"yyyy-mm-dd\" in parameter"))
         self.__commands.append(Command("department", "dpt", "Takes a department as a parameter (name or number)"))
         self.__commands.append(Command("excel", "e", "Outputs the result to an excel file (file name can be given as parameter)"))
+        self.__commands.append(Command("plot", "p", "Outputs a plot from given date in the whole France country"))
 
         self.shouldQuit = False
 
@@ -94,7 +95,10 @@ class CLI:
             self.__api.get_all_data()
             self.__api.print_response()
             self.__api.export_response_to_excel(param)
-
+        
+        if command.get_name() == "plot":
+            self.__api.get_data_since("France", param)
+            self.__api.print_response()
     ##
     # @fn exec
     # @brief Parses and executes the whole line

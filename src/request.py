@@ -12,7 +12,12 @@
 # @copyright Copyright (c) 2021
 ##
 import requests
+
 from tabulate import tabulate
+
+from datetime import datetime
+from datetime import timedelta
+
 import re
 import xlwt
 import os
@@ -110,7 +115,34 @@ class Request:
                 print ("The output file already exists. Rename it, move it or remove it before we can write to another of the same name")
             else:
                 book.save(fname)
+    ##
+    # @fn get_data_since
+    # @brief Concatenates data since given date and dpt
+    #
+    # @param dpt The department to get data from
+    # @param date The date to start from
+    ##
+    def get_data_since(self, dpt, date = "0000-00-00"):
+        regex = re.compile('\d{4}-\d{2}-\d{2}')
+        if date != "0000-00-00":
+            if regex.match(date) is not None:
+                # From this point - Date is valid (somehow)
+                if type(dpt) is not str:
+                    dpt = str(dpt)
+                # From this point - Dpt is now valid aswell
+                # Setting up dates
+                end_date = datetime.date(datetime.now()) # The end date we want (today)
+                cur_date = datetime.date(datetime.strptime(date, '%Y-%m-%d')) # The starting date (given in params)
+                
+                response = []
+                while cur_date <= end_date:
+                    self.get_dpt_data(dpt, cur_date.strftime('%Y-%m-%d'))
+                    response.append(self.response[0])
+                    cur_date += timedelta(days=1)
+                self.response = response
 
+        else:
+            print("Expecting a date in the following format : YYYY-MM-DD")
     
     ##
     # @fn get_global_data
