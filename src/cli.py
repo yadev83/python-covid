@@ -12,6 +12,7 @@
 ##
 from types import MethodType
 import request as req
+import matplotlib.pyplot as plt
 
 ##
 # @class CLI
@@ -98,7 +99,15 @@ class CLI:
         
         if command.get_name() == "plot":
             self.__api.get_data_since("France", param)
-            self.__api.print_response()
+            y_axis = []
+            x_axis = []
+            for resp in self.__api.response:
+                x_axis.append(resp["Date"][5:])
+                y_axis.append(resp["Hospitalisations"])
+            plt.plot(x_axis, y_axis)
+            plt.ylabel("Hospitalisations")
+            plt.xlabel("Date (MM-JJ)")
+            plt.show()
     ##
     # @fn exec
     # @brief Parses and executes the whole line
