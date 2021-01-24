@@ -137,7 +137,8 @@ class Request:
                 response = []
                 while cur_date <= end_date:
                     self.get_dpt_data(dpt, cur_date.strftime('%Y-%m-%d'))
-                    response.append(self.response[0])
+                    if len(self.response):
+                        response.append(self.response[0])
                     cur_date += timedelta(days=1)
                 self.response = response
 
