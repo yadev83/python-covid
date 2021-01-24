@@ -135,7 +135,13 @@ class Request:
                 cur_date = datetime.date(datetime.strptime(date, '%Y-%m-%d')) # The starting date (given in params)
                 
                 response = []
+                print("Gathering data for every day since the " + cur_date.strftime('%Y-%m-%d') + ".")
+                print("It may take some time, especially if this was a long time ago, Please be patient...")
                 while cur_date <= end_date:
+                    if(cur_date == end_date):
+                        print("Gathering data for today's date. Almost there !")
+                    else:
+                        print("Gathering data for " + cur_date.strftime('%Y-%m-%d') + ".")
                     self.get_dpt_data(dpt, cur_date.strftime('%Y-%m-%d'))
                     if len(self.response):
                         response.append(self.response[0])

@@ -11,6 +11,8 @@
 # @copyright Copyright (c) 2021
 ##
 from types import MethodType
+from datetime import datetime
+
 import request as req
 import matplotlib.pyplot as plt
 
@@ -99,14 +101,51 @@ class CLI:
         
         if command.get_name() == "plot":
             self.__api.get_data_since("France", param)
-            y_axis = []
+
+            y_axis_hospitalisations = []
+            y_axis_reanimations = []
+            y_axis_deaths = []
+            y_axis_gueris = []
+
             x_axis = []
             for resp in self.__api.response:
-                x_axis.append(resp["Date"][5:])
-                y_axis.append(resp["Hospitalisations"])
-            plt.plot(x_axis, y_axis)
+                x_axis.append(resp["Date"])
+                y_axis_hospitalisations.append(resp["Hospitalisations"])
+                y_axis_reanimations.append(resp["Reanimation"])
+                y_axis_deaths.append(resp["Deces"])
+                y_axis_gueris.append(resp["Gueris"])
+
+
+            # Hospitalisations
+            plt.plot(x_axis, y_axis_hospitalisations)
+            plt.title("Hospitalisations liées au COVID depuis " + x_axis[0])
+            plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
             plt.ylabel("Hospitalisations")
-            plt.xlabel("Date (MM-JJ)")
+            plt.xlabel("Date (YYYY-MM-JJ)")
+            plt.show()
+
+            # Reanimations
+            plt.plot(x_axis, y_axis_reanimations)
+            plt.title("Réanimations liées au COVID depuis " + x_axis[0])
+            plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
+            plt.ylabel("Reanimations")
+            plt.xlabel("Date (YYYY-MM-JJ)")
+            plt.show()
+
+            # Deces
+            plt.plot(x_axis, y_axis_deaths)
+            plt.title("Décés liés au COVID depuis " + x_axis[0])
+            plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
+            plt.ylabel("Deces")
+            plt.xlabel("Date (YYYY-MM-JJ)")
+            plt.show()
+
+            # Gueris
+            plt.plot(x_axis, y_axis_gueris)
+            plt.title("Patients guéris du COVID depuis " + x_axis[0])
+            plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
+            plt.ylabel("Gueris")
+            plt.xlabel("Date (YYYY-MM-JJ)")
             plt.show()
     ##
     # @fn exec
