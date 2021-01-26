@@ -103,6 +103,7 @@ class CLI:
             self.__api.get_data_since("France", param)
 
             y_axis_hospitalisations = []
+            y_axis_nouvelles_hospitalisations = []
             y_axis_reanimations = []
             y_axis_deaths = []
             y_axis_gueris = []
@@ -111,6 +112,7 @@ class CLI:
             for resp in self.__api.response:
                 x_axis.append(resp["Date"])
                 y_axis_hospitalisations.append(resp["Hospitalisations"])
+                y_axis_nouvelles_hospitalisations.append(resp["Nouvelles Hospitalisations"])
                 y_axis_reanimations.append(resp["Reanimation"])
                 y_axis_deaths.append(resp["Deces"])
                 y_axis_gueris.append(resp["Gueris"])
@@ -145,6 +147,14 @@ class CLI:
             plt.title("Patients guéris du COVID depuis " + x_axis[0])
             plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
             plt.ylabel("Gueris")
+            plt.xlabel("Date (YYYY-MM-JJ)")
+            plt.show()
+
+            # Nouvelles Hospitalisations
+            plt.plot(x_axis, y_axis_nouvelles_hospitalisations)
+            plt.title("Nouvelles Hospitalisations par jour depuis " + x_axis[0])
+            plt.setp(plt.gca().xaxis.get_majorticklabels(), 'rotation', 90)
+            plt.ylabel("Nouvelles Hospitalisations pr jour")
             plt.xlabel("Date (YYYY-MM-JJ)")
             plt.show()
     ##
